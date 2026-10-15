@@ -1,4 +1,3 @@
-# FUNGSI: Pabrik Universal Link Shopee Anti-404
 import urllib.parse
 
 class LinkFactory:
