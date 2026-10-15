@@ -1,0 +1,31 @@
+name: 🌌 CENTURION V2 (Market Intelligence)
+
+on:
+  schedule:
+    - cron: '0 4,10,14,22 * * *'
+  workflow_dispatch:
+
+jobs:
+  operasi_pusat:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 📥 Sinkronisasi Data
+        uses: actions/checkout@v3
+
+      - name: 🐍 Menyiapkan Lingkungan Kuantum
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 🚀 EKSEKUSI OPERASI SENTRAL
+        run: python centurion_ceo.py
+
+      - name: 💾 Menyimpan Analitik & Memori ke Satelit
+        run: |
+          git config --local user.email "ceo@centurion.ai"
+          git config --local user.name "Centurion CEO"
+          git add database/
+          git commit -m "Auto-Update: Sinkronisasi Radar Tren & Log Operasi" || echo "Tidak ada perubahan data"
+          git push
