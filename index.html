@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTURION NEXUS | Live Market Intelligence</title>
+    <style>
+        :root {
+            --bg-dark: #090c10; --card-bg: #161b22; --border: #30363d;
+            --text-main: #c9d1d9; --text-muted: #8b949e;
+            --accent-blue: #58a6ff; --accent-green: #3fb950; --accent-orange: #ff7b72;
+        }
+        body { background-color: var(--bg-dark); color: var(--text-main); font-family: "Courier New", Courier, monospace; margin: 0; padding: 20px; }
+        .container { max-width: 1050px; margin: auto; }
+        .header { text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 25px; }
+        h1 { color: var(--accent-blue); margin: 0; font-size: 26px; letter-spacing: 2px; }
+        
+        .trend-radar { background: linear-gradient(145deg, #161b22, #10141a); border: 1px solid var(--accent-orange); border-radius: 8px; padding: 20px; margin-bottom: 25px; }
+        .trend-radar h2 { margin-top: 0; color: var(--accent-orange); font-size: 16px; border-bottom: 1px dashed var(--accent-orange); padding-bottom: 10px; display: flex; justify-content: space-between; }
+        .trend-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-top: 15px; }
+        .trend-item { background: #0d1117; padding: 12px; border-radius: 6px; border-left: 3px solid var(--accent-orange); font-size: 13px; line-height: 1.5; }
+        .trend-title { font-weight: bold; color: var(--text-main); }
+        .context-badge { display: inline-block; background: rgba(255, 123, 114, 0.15); color: var(--accent-orange); padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
+
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .metric-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; text-align: center; }
+        .metric-value { font-size: 32px; font-weight: bold; margin: 10px 0; color: var(--accent-green); }
+
+        .panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌌 CENTURION NEXUS V2</h1>
+            <div style="color: var(--text-muted); font-size: 13px; margin-top: 5px;">Secure Autonomous Command Center | ID: 11315710905</div>
+        </div>
+
+        <div class="trend-radar">
+            <h2>
+                <span>🔥 LIVE TREND RADAR (MARKET INTELLIGENCE)</span>
+                <span style="font-size: 11px; color: var(--text-muted);" id="trend-time">Sinkronisasi...</span>
+            </h2>
+            <div class="context-badge" id="market-context">Konteks Pasar: Mengkalkulasi...</div>
+            
+            <div class="trend-list">
+                <div class="trend-item"><div class="trend-title">🐦 Divisi X / Twitter</div><div id="trend-x" style="color:var(--text-muted); font-size:11px; margin-top:4px;">Menunggu data...</div></div>
+                <div class="trend-item"><div class="trend-title">🎵 Divisi TikTok</div><div id="trend-tt" style="color:var(--text-muted); font-size:11px; margin-top:4px;">Menunggu data...</div></div>
+                <div class="trend-item"><div class="trend-title">📸 Divisi Instagram Reels</div><div id="trend-ig" style="color:var(--text-muted); font-size:11px; margin-top:4px;">Menunggu data...</div></div>
+                <div class="trend-item"><div class="trend-title">📌 Divisi Pinterest</div><div id="trend-pin" style="color:var(--text-muted); font-size:11px; margin-top:4px;">Menunggu data...</div></div>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card"><div style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Total Operasi Tersimpan</div><div class="metric-value" id="total-links" style="color: var(--accent-blue);">0</div></div>
+            <div class="metric-card"><div style="font-size: 12px; color: var(--text-muted); text-transform: uppercase;">Akurasi Kognitif AI</div><div class="metric-value" id="avg-score">0%</div></div>
+        </div>
+
+        <div class="panel">
+            <h2 style="margin-top:0; font-size:15px; border-bottom:1px solid var(--border); padding-bottom:10px;">>_ Log Operasi Penyebaran Link</h2>
+            <table>
+                <thead><tr><th>Waktu (WIB)</th><th>Platform Target</th><th>Produk Eksekusi</th><th>Status</th></tr></thead>
+                <tbody id="table-body">
+                    <tr><td colspan="4" style="text-align:center; color: var(--text-muted);">Menghubungkan ke satelit database/memory.json...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function fetchTrends() {
+            try {
+                const res = await fetch('database/live_trends.json');
+                const trends = await res.json();
+                document.getElementById('market-context').innerText = "Konteks Pasar: " + (trends.Market_Context || "Organik");
+                document.getElementById('trend-x').innerText = trends["X/Twitter"] || "Stabil";
+                document.getElementById('trend-tt').innerText = trends["TikTok"] || "Stabil";
+                document.getElementById('trend-ig').innerText = trends["Instagram"] || "Stabil";
+                document.getElementById('trend-pin').innerText = trends["Pinterest"] || "Stabil";
+                document.getElementById('trend-time').innerText = "Update: " + new Date(trends.Last_Updated).toLocaleTimeString('id-ID');
+            } catch (err) {}
+        }
+
+        async function fetchLogs() {
+            try {
+                const res = await fetch('database/memory.json');
+                const data = await res.json();
+                document.getElementById('total-links').innerText = data.length;
+                
+                let totalScore = 0;
+                const tbody = document.getElementById('table-body');
+                tbody.innerHTML = ''; 
+
+                data.slice().reverse().slice(0, 15).forEach(item => {
+                    totalScore += (item.intent_score || 80); 
+                    const timeStr = new Date(item.time).toLocaleTimeString('id-ID', {hour: '2-digit', minute:'2-digit'});
+                    tbody.innerHTML += `<tr>
+                        <td style="color:var(--text-muted)">${timeStr}</td>
+                        <td style="color:var(--accent-blue); font-weight:bold;">${item.platform}</td>
+                        <td style="color:var(--text-main);">${item.target_product}</td>
+                        <td><span style="background: rgba(63,185,80,0.15); color: #3fb950; padding: 3px 8px; border-radius: 10px; font-size:11px;">${item.intent_score}% LOCK</span></td>
+                    </tr>`;
+                });
+                document.getElementById('avg-score').innerText = Math.round(totalScore / Math.min(data.length, 15)) + "%";
+            } catch (err) {}
+        }
+
+        window.onload = () => { fetchTrends(); fetchLogs(); };
+    </script>
+</body>
+</html>
