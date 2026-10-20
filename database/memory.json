@@ -508,5 +508,35 @@
         "platform": "Pinterest Boards",
         "target_product": "Sepatu Sneakers Pria Diskon",
         "intent_score": 86
+    },
+    {
+        "time": "2026-10-20T09:19:41.436098Z",
+        "platform": "X/Twitter Div.",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 84
+    },
+    {
+        "time": "2026-10-20T09:19:42.938493Z",
+        "platform": "TikTok Sentiment",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 84
+    },
+    {
+        "time": "2026-10-20T09:19:44.441239Z",
+        "platform": "Meta (FB Groups)",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 82
+    },
+    {
+        "time": "2026-10-20T09:19:45.943999Z",
+        "platform": "Instagram Reels",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 94
+    },
+    {
+        "time": "2026-10-20T09:19:47.446765Z",
+        "platform": "Pinterest Boards",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 91
     }
 ]
