@@ -568,5 +568,35 @@
         "platform": "Pinterest Boards",
         "target_product": "Sepatu Sneakers Pria Diskon",
         "intent_score": 98
+    },
+    {
+        "time": "2026-10-21T00:29:43.672074Z",
+        "platform": "X/Twitter Div.",
+        "target_product": "Kemeja Flanel Lengan Panjang",
+        "intent_score": 84
+    },
+    {
+        "time": "2026-10-21T00:29:45.174513Z",
+        "platform": "TikTok Sentiment",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 85
+    },
+    {
+        "time": "2026-10-21T00:29:46.677175Z",
+        "platform": "Meta (FB Groups)",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 84
+    },
+    {
+        "time": "2026-10-21T00:29:48.179877Z",
+        "platform": "Instagram Reels",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 90
+    },
+    {
+        "time": "2026-10-21T00:29:49.682416Z",
+        "platform": "Pinterest Boards",
+        "target_product": "Kemeja Flanel Lengan Panjang",
+        "intent_score": 90
     }
 ]
