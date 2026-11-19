@@ -1,35 +1,5 @@
 [
     {
-        "time": "2026-11-12T02:48:21.238079Z",
-        "platform": "X/Twitter Div.",
-        "target_product": "Kemeja Flanel Lengan Panjang",
-        "intent_score": 90
-    },
-    {
-        "time": "2026-11-12T02:48:22.740548Z",
-        "platform": "TikTok Sentiment",
-        "target_product": "Kemeja Flanel Lengan Panjang",
-        "intent_score": 91
-    },
-    {
-        "time": "2026-11-12T02:48:24.243393Z",
-        "platform": "Meta (FB Groups)",
-        "target_product": "Kemeja Flanel Lengan Panjang",
-        "intent_score": 84
-    },
-    {
-        "time": "2026-11-12T02:48:25.745641Z",
-        "platform": "Instagram Reels",
-        "target_product": "Kemeja Flanel Lengan Panjang",
-        "intent_score": 91
-    },
-    {
-        "time": "2026-11-12T02:48:27.248065Z",
-        "platform": "Pinterest Boards",
-        "target_product": "Sepatu Sneakers Pria Diskon",
-        "intent_score": 86
-    },
-    {
         "time": "2026-11-12T12:28:22.901257Z",
         "platform": "X/Twitter Div.",
         "target_product": "Sepatu Sneakers Pria Diskon",
@@ -598,5 +568,35 @@
         "platform": "Pinterest Boards",
         "target_product": "Kemeja Flanel Lengan Panjang",
         "intent_score": 81
+    },
+    {
+        "time": "2026-11-19T12:45:10.074804Z",
+        "platform": "X/Twitter Div.",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 97
+    },
+    {
+        "time": "2026-11-19T12:45:11.577140Z",
+        "platform": "TikTok Sentiment",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 94
+    },
+    {
+        "time": "2026-11-19T12:45:13.079750Z",
+        "platform": "Meta (FB Groups)",
+        "target_product": "Kemeja Flanel Lengan Panjang",
+        "intent_score": 81
+    },
+    {
+        "time": "2026-11-19T12:45:14.582309Z",
+        "platform": "Instagram Reels",
+        "target_product": "Kemeja Flanel Lengan Panjang",
+        "intent_score": 80
+    },
+    {
+        "time": "2026-11-19T12:45:16.084953Z",
+        "platform": "Pinterest Boards",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 83
     }
 ]
