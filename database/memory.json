@@ -1,35 +1,5 @@
 [
     {
-        "time": "2026-11-15T01:42:02.228684Z",
-        "platform": "X/Twitter Div.",
-        "target_product": "Sepatu Sneakers Pria Diskon",
-        "intent_score": 83
-    },
-    {
-        "time": "2026-11-15T01:42:03.731264Z",
-        "platform": "TikTok Sentiment",
-        "target_product": "Kemeja Flanel Lengan Panjang",
-        "intent_score": 83
-    },
-    {
-        "time": "2026-11-15T01:42:05.234106Z",
-        "platform": "Meta (FB Groups)",
-        "target_product": "Sepatu Sneakers Pria Diskon",
-        "intent_score": 81
-    },
-    {
-        "time": "2026-11-15T01:42:06.736881Z",
-        "platform": "Instagram Reels",
-        "target_product": "Kemeja Flanel Lengan Panjang",
-        "intent_score": 80
-    },
-    {
-        "time": "2026-11-15T01:42:08.238211Z",
-        "platform": "Pinterest Boards",
-        "target_product": "Sepatu Sneakers Pria Diskon",
-        "intent_score": 91
-    },
-    {
         "time": "2026-11-15T11:52:04.136718Z",
         "platform": "X/Twitter Div.",
         "target_product": "Kemeja Flanel Lengan Panjang",
@@ -598,5 +568,35 @@
         "platform": "Pinterest Boards",
         "target_product": "Kemeja Flanel Lengan Panjang",
         "intent_score": 99
+    },
+    {
+        "time": "2026-11-22T20:38:30.530818Z",
+        "platform": "X/Twitter Div.",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 92
+    },
+    {
+        "time": "2026-11-22T20:38:32.033338Z",
+        "platform": "TikTok Sentiment",
+        "target_product": "Kemeja Flanel Lengan Panjang",
+        "intent_score": 98
+    },
+    {
+        "time": "2026-11-22T20:38:33.536103Z",
+        "platform": "Meta (FB Groups)",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 87
+    },
+    {
+        "time": "2026-11-22T20:38:35.038923Z",
+        "platform": "Instagram Reels",
+        "target_product": "Sepatu Sneakers Pria Diskon",
+        "intent_score": 98
+    },
+    {
+        "time": "2026-11-22T20:38:36.541841Z",
+        "platform": "Pinterest Boards",
+        "target_product": "Kemeja Flanel Lengan Panjang",
+        "intent_score": 81
     }
 ]
